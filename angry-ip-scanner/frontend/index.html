@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry IP Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Angry IP Scanner</h1>
+        <form id="scanForm">
+            <label for="ip">IP Address:</label>
+            <input type="text" id="ip" name="ip" placeholder="e.g., 192.168.1.1" required>
+            <label for="start_port">Start Port:</label>
+            <input type="number" id="start_port" name="start_port" value="1">
+            <label for="end_port">End Port:</label>
+            <input type="number" id="end_port" name="end_port" value="1024">
+            <button type="submit">Scan</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div class="progress-container">
+        <progress id="scanProgress" value="0" max="100"></progress>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
